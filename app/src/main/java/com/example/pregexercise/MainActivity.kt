@@ -1,5 +1,6 @@
 package com.example.pregexercise
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -13,7 +14,8 @@ class MainActivity : AppCompatActivity() {
 
         var llStartBtn = findViewById<LinearLayout>(R.id.llStart)
         llStartBtn.setOnClickListener {
-            Toast.makeText(this,"Here we will start the exercise", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, ExerciseActivity::class.java)
+            startActivity(intent!!)
         }
 
     }
