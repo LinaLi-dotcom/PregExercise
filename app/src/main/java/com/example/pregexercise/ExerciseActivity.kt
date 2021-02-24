@@ -3,16 +3,20 @@ package com.example.pregexercise
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.speech.tts.TextToSpeech
+import android.util.Log
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_exercise.*
+import java.util.*
+import kotlin.collections.ArrayList
 
 
-
-class ExerciseActivity : AppCompatActivity() {
+class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private var restTimer: CountDownTimer ?= null
     private var restProcess = 0
@@ -24,6 +28,10 @@ class ExerciseActivity : AppCompatActivity() {
     private var exerciseList: ArrayList<ExerciseModel>? = null
     private var currentExercisePostion = -1
 
+    private var tts: TextToSpeech? = null
+
+    private var exerciseAdapter: ExerciseStatusAdapter? =null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_exercise)
@@ -34,8 +42,14 @@ class ExerciseActivity : AppCompatActivity() {
         toolbar_exercise_activity.setNavigationOnClickListener {
             onBackPressed()
         }
+
+        tts = TextToSpeech(this, this)
+
         exerciseList = Constants.defaultExerciseList()
         setupRestView()
+
+        setupExerciseStatusRecyclerView()
+
     }
 
     override fun onDestroy() {
@@ -49,6 +63,12 @@ class ExerciseActivity : AppCompatActivity() {
             exerciseTimer!!.cancel()
             exerciseRestProcess = 0
         }
+
+        if(tts != null) {
+            tts!!.stop()
+            tts!!.shutdown()
+        }
+
         super.onDestroy()
     }
 
@@ -81,6 +101,10 @@ class ExerciseActivity : AppCompatActivity() {
             override fun onFinish() {
 
                 currentExercisePostion ++
+
+                exerciseList!![currentExercisePostion].setIsSelected(true)
+                exerciseAdapter!!.notifyDataSetChanged()
+
                 setupExerciseView()
             }
         }.start()
@@ -101,14 +125,18 @@ class ExerciseActivity : AppCompatActivity() {
         ivImage.setImageResource(exerciseList!![currentExercisePostion].getImage())
         exerciseTvName.text = exerciseList!![currentExercisePostion].getName()
 
+        speakOut(exerciseList!![currentExercisePostion].getName())
+
         setExericiseProgressBar()
     }
+
     private fun setExericiseProgressBar() {
         var exerciseProgressBar = findViewById<ProgressBar>(R.id.exerciseProgressBar)
         exerciseProgressBar.progress = exerciseRestProcess
         exerciseTimer = object : CountDownTimer(20000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 exerciseRestProcess ++
+
                 exerciseProgressBar.progress = 20 - exerciseRestProcess
 
                 val exerciseTvTimer = findViewById<TextView>(R.id.exerciseTvTimer)
@@ -116,6 +144,11 @@ class ExerciseActivity : AppCompatActivity() {
             }
 
             override fun onFinish() {
+
+                exerciseList!![currentExercisePostion].setIsSelected(false)
+                exerciseList!![currentExercisePostion].setIsCompleted(true)
+                exerciseAdapter!!.notifyDataSetChanged()
+
                 if(currentExercisePostion < exerciseList?.size!! -1 ) {
                     setupRestView()
                 }else {
@@ -128,6 +161,30 @@ class ExerciseActivity : AppCompatActivity() {
             }
         }.start()
     }
+
+    override fun onInit(status: Int) {
+
+        if(status == TextToSpeech.SUCCESS) {
+            val result = tts!!.setLanguage(Locale.US)
+            if(result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED){
+                Log.e("TTS", "The language is not supported")
+            }
+        }else{
+            Log.e("TTS", "Initialization Failed!")
+        }
+    }
+
+    private fun speakOut(text: String){
+        tts!!.speak(text, TextToSpeech.QUEUE_FLUSH, null, "" )
+    }
+
+    private fun setupExerciseStatusRecyclerView(){
+        rvExerciseStatus.layoutManager = LinearLayoutManager(this,
+                LinearLayoutManager.HORIZONTAL, false)
+        exerciseAdapter = ExerciseStatusAdapter(exerciseList!!, this)
+        rvExerciseStatus.adapter = exerciseAdapter
+    }
+
 
 
 }

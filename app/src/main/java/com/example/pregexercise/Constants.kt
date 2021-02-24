@@ -21,7 +21,7 @@ class Constants {
             exerciseList.add(exerciseTwo)
 
             val exerciseThree = ExerciseModel(3,
-                "exerciseTwo",
+                "exerciseThree",
                 R.drawable.ex003,
                 false,
                 false)
