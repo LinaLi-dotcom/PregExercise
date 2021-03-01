@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <color name="colorPrimary">#091ba1</color>
-    <color name="colorPrimaryDark">#0d2a48</color>
-    <color name="colorAccent">#FF018786</color>
-    <color name="colorHighLighted">#C4C4C4</color>
+    <!--Workout Set-->
+    <color name="workout_set_background">#B78493</color>
+    <color name="colorPrimaryDark">#F286A0</color>
+    <color name="colorAccent">#F286A0</color>
+    <color name="colorHighLighted">#F8E6CB</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="toolbar_color_control_normal">#000000</color>
+    <color name="toolbar_color_control_normal">#B78493</color>
+    <color name="colorPrimary">#E95f62</color>
+    <color name="colorPrimaryVariant">#B78493</color>
+    <color name="colorOnPrimary">@color/colorWhite</color>
+    <color name="colorSecondary">#B78493</color>
+    <color name="colorSecondaryVariant">#B78493</color>
+    <color name="colorOnSecondary">@color/black</color>
 
-
+    <color name="gradient_orange_start">#E95f62</color>
+    <color name="gradient_orange_end">#F286A0</color>
+    <color name="gradient_red_start">#FDB9BE</color>
+    <color name="gradient_red_end">#E95A7D</color>
+    <color name="gradient_green_start">#DFF7DF</color>
+    <color name="gradient_green_end">#98F286</color>
+    <color name="gradient_blue_start">#DFE4EF</color>
+    <color name="gradient_blue_end">#899CFC</color>
+    <color name="gradient_pink_start">#FFDBD5</color>
+    <color name="gradient_pink_end">#FE69BD</color>
 
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
@@ -17,4 +32,24 @@
     <color name="teal_700">#00796B</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
 </resources>
+<!--
+TRAVERSE CITY
+5193B3
+62C4C3
+F8D49B
+F8E6CB
+
+SUNRISE
+75BDE0
+F8D49B
+F8BC9B
+F89B9B
+
+MELLON
+97DBAE
+C3E5AE
+F1E1A6
+F4BBBB
+-->

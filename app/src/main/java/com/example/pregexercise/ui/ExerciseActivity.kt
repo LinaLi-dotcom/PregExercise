@@ -1,4 +1,4 @@
-package com.example.pregexercise
+package com.example.pregexercise.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,17 +6,18 @@ import android.os.CountDownTimer
 import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.view.View
-import android.widget.ProgressBar
-import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_exercise.*
+import com.example.pregexercise.databinding.ActivityExerciseBinding
+import com.example.pregexercise.ui.adepters.WorkoutStatusAdapter
+import com.example.pregexercise.models.ExerciseModel 
 import java.util.*
 import kotlin.collections.ArrayList
 
 
-class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
+abstract class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
+
+    private lateinit var binding: ActivityExerciseBinding
 
     private var restTimer: CountDownTimer ?= null
     private var restProcess = 0
@@ -30,28 +31,29 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     private var tts: TextToSpeech? = null
 
-    private var exerciseAdapter: ExerciseStatusAdapter? =null
+    private var exerciseAdapter: WorkoutStatusAdapter? =null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_exercise)
 
-        val toolbar_exercise_activity = findViewById<Toolbar>(R.id.toolbar_exercise_activity)
+        binding = ActivityExerciseBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+/*
         setSupportActionBar(toolbar_exercise_activity)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        toolbar_exercise_activity.setNavigationOnClickListener {
+        binding.toolbarExerciseActivity.setNavigationOnClickListener {
             onBackPressed()
         }
 
         tts = TextToSpeech(this, this)
 
-        exerciseList = Constants.defaultExerciseList()
+        exerciseList = ArrayList<ExerciseModel>()//Constants.defaultExerciseList()
         setupRestView()
 
-        setupExerciseStatusRecyclerView()
+        setupExerciseStatusRecyclerView()*/
 
     }
-
+/*
     override fun onDestroy() {
 
         if (restTimer != null) {
@@ -87,15 +89,12 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun setRestProgressBar (){
-        val progressBar = findViewById<ProgressBar>(R.id.progressBar)
-        progressBar.progress = restProcess
+        binding.progressBar.progress = restProcess
         restTimer = object : CountDownTimer(10000, 1000){
             override fun onTick(millisUntilFinished: Long) {
                 restProcess ++
                 progressBar.progress = 10 - restProcess
-
-                val tvTimer = findViewById<TextView>(R.id.tvTimer)
-                tvTimer.text =(10 - restProcess).toString()
+                binding.tvTimer.text =(10 - restProcess).toString()
             }
 
             override fun onFinish() {
@@ -131,20 +130,17 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
 
     private fun setExericiseProgressBar() {
-        var exerciseProgressBar = findViewById<ProgressBar>(R.id.exerciseProgressBar)
-        exerciseProgressBar.progress = exerciseRestProcess
+        binding.exerciseProgressBar.progress = exerciseRestProcess
         exerciseTimer = object : CountDownTimer(20000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 exerciseRestProcess ++
 
                 exerciseProgressBar.progress = 20 - exerciseRestProcess
 
-                val exerciseTvTimer = findViewById<TextView>(R.id.exerciseTvTimer)
-                exerciseTvTimer.text = (20 - exerciseRestProcess).toString()
+                binding.exerciseTvTimer.text = (20 - exerciseRestProcess).toString()
             }
 
             override fun onFinish() {
-
                 exerciseList!![currentExercisePostion].setIsSelected(false)
                 exerciseList!![currentExercisePostion].setIsCompleted(true)
                 exerciseAdapter!!.notifyDataSetChanged()
@@ -181,10 +177,8 @@ class ExerciseActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private fun setupExerciseStatusRecyclerView(){
         rvExerciseStatus.layoutManager = LinearLayoutManager(this,
                 LinearLayoutManager.HORIZONTAL, false)
-        exerciseAdapter = ExerciseStatusAdapter(exerciseList!!, this)
-        rvExerciseStatus.adapter = exerciseAdapter
-    }
-
-
+        //exerciseAdapter = ExerciseStatusAdapter(exerciseList!!, this)
+       // rvExerciseStatus.adapter = exerciseAdapter
+    }*/
 
 }

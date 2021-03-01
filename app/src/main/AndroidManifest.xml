@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PregExercise">
-        <activity android:name=".ExerciseActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity android:name=".ui.HistoryActivity"></activity>
+        <activity android:name=".ui.FinishActivity" />
+        <activity android:name=".ui.WorkoutListActivity" />
+        <activity android:name=".ui.WorkoutActivity" />
+        <activity android:name=".ui.WorkoutSetActivity" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"

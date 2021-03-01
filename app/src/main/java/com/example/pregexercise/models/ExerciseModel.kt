@@ -1,4 +1,4 @@
-package com.example.pregexercise
+package com.example.pregexercise.models
 
 class ExerciseModel (
     private var id: Int,
