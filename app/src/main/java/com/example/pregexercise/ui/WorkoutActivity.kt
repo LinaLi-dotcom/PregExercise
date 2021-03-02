@@ -52,24 +52,13 @@ class WorkoutActivity : BaseActivity(){
         binding = ActivityWorkoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbarExerciseActivity)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        binding.toolbarExerciseActivity.setNavigationOnClickListener {
-            onBackPressed()
-        }
-
-
         if (intent.hasExtra(Constants.INTENT_WORKOUT_SET_ID)) {
             mSetId = intent.getStringExtra(Constants.INTENT_WORKOUT_SET_ID)!!
         }
         if (intent.hasExtra(Constants.INTENT_WORKOUT_SET_NAME)) {
             mSetName = intent.getStringExtra(Constants.INTENT_WORKOUT_SET_NAME)!!
         }
-
-        binding.toolbarExerciseActivity.setNavigationOnClickListener {
-            customDialogForBackButton()
-            //onBackPressed()  // * back to previous layout
-        }
+        setupActionBar()
 
         // Start and pause timer : optional
         binding.exerciseProgressBar.setOnClickListener {  checkPauseTimer()  }
@@ -122,7 +111,7 @@ class WorkoutActivity : BaseActivity(){
         binding.progressBar.progress = restProgress
         // rest minutes
         restTimerDuration = mWorkoutListItems!![currentExercisePosition+1].restTime
-        Log.i("Rest Time >>", "$restTimerDuration   $currentExercisePosition")
+        //Log.i("Rest Time >>", "$restTimerDuration   $currentExercisePosition")
         restTimer = object : CountDownTimer((restTimerDuration * 1000).toLong(),1000) {
             override fun onTick(millisUntilFinished: Long) {
                 restProgress++
@@ -197,6 +186,7 @@ class WorkoutActivity : BaseActivity(){
                     Toast.makeText(this@WorkoutActivity, "Great Job, you have completed",Toast.LENGTH_SHORT).show()
                     finish()
                     val intent = Intent(this@WorkoutActivity, FinishActivity::class.java)
+                    intent.putExtra(Constants.INTENT_WORKOUT_SET_NAME, mSetName)
                     startActivity(intent)
                 }
             }
@@ -251,6 +241,22 @@ class WorkoutActivity : BaseActivity(){
         }
         isTimerActive = !isTimerActive
         Toast.makeText(this, "Pause  ", Toast.LENGTH_SHORT).show()
+    }
+
+
+
+    private fun setupActionBar() {
+        setSupportActionBar(binding.toolbarCustom)
+        binding.tvTitle.text = mSetName //resources.getString(R.string.toolbar_workout)
+
+        val actionBar = supportActionBar
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true)
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_topbar_back_arrow)
+        }
+        binding.toolbarCustom.setNavigationOnClickListener {
+            customDialogForBackButton()
+        }
     }
 }
 

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.pregexercise.R
 import com.example.pregexercise.databinding.ActivityHistoryBinding
 import com.example.pregexercise.models.SqliteOpenHelper
 import com.example.pregexercise.ui.adepters.HistoryAdapter
@@ -16,6 +17,7 @@ class HistoryActivity : AppCompatActivity() {
 
         binding = ActivityHistoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setupActionBar()
 
         getAllCompletedDates()
     }
@@ -49,5 +51,19 @@ class HistoryActivity : AppCompatActivity() {
             binding.tvNoDataAvailable.visibility = View.VISIBLE
         }
         // END
+    }
+
+    private fun setupActionBar() {
+        setSupportActionBar(binding.toolbarCustom)
+        binding.tvTitle.text = resources.getString(R.string.toolbar_workout_history)
+
+        val actionBar = supportActionBar
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true)
+            actionBar.setHomeAsUpIndicator(R.drawable.ic_topbar_back_arrow)
+        }
+        binding.toolbarCustom.setNavigationOnClickListener {
+            onBackPressed()
+        }
     }
 }

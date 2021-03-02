@@ -1,9 +1,12 @@
 package com.example.pregexercise.ui
 
+import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -72,15 +75,27 @@ class WorkoutSetActivity : BaseActivity(), View.OnClickListener {
     private fun setupActionBar() {
         setSupportActionBar(binding.toolbarCustom)
         binding.tvTitle.text = resources.getString(R.string.toolbar_workout_set)
-/*
-        val actionBar = supportActionBar
-        if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true)
-            actionBar.setHomeAsUpIndicator(R.drawable.ic_topbar_back_arrow)
+    }
+
+    override fun onBackPressed() {
+        doubleBackToExit()
+    }
+
+    /**
+     * Toolbar Activity
+     */
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_toolbar, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
+        R.id.go_to_history -> {
+            val intent = Intent(this, HistoryActivity::class.java)
+            startActivity(intent)
+            true
         }
-        binding.toolbarCustom.setNavigationOnClickListener {
-            onBackPressed()
-        }*/
+        else -> super.onOptionsItemSelected(item)
     }
 
 }

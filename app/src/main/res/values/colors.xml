@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--Workout Set-->
-    <color name="workout_set_background">#B78493</color>
-    <color name="colorPrimaryDark">#F286A0</color>
-    <color name="colorAccent">#F286A0</color>
+    <!--COLOR COMMON THEME-->
+    <color name="colorPrimaryDark">#5193B3</color>
+    <color name="colorAccent">#5193B3</color>
     <color name="colorHighLighted">#F8E6CB</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="toolbar_color_control_normal">#B78493</color>
-    <color name="colorPrimary">#E95f62</color>
-    <color name="colorPrimaryVariant">#B78493</color>
+    <color name="colorPrimary">#5193B3</color>
+    <color name="colorPrimaryVariant">#5193B3</color> <!--TOP SCREEN BAR-->
     <color name="colorOnPrimary">@color/colorWhite</color>
     <color name="colorSecondary">#B78493</color>
     <color name="colorSecondaryVariant">#B78493</color>
     <color name="colorOnSecondary">@color/black</color>
 
+    <!--BACKGROUND COLOR-->
+    <color name="app_background">#FFFFFF</color>
+    <color name="toolbar_background">#62C4C3</color>
+    <color name="workout_set_background">#FFFFFF</color>
+    <color name="toolbar_color_control_normal">#B78493</color>
+    <color name="row_odd_background">#FFFFFF</color>
+    <color name="row_even_background">#e4fbff</color>
+
+    <!--COLOR BY TEXT SIZE-->
+    <color name="color_text_extra_large">#E95f62</color>
+    <color name="color_text_big">#E95f62</color>
+    <color name="color_text_large">#E95f62</color>
+    <color name="color_text_normal">#E95A7D</color>
+    <color name="color_text_small">#E95A7D</color>
+
+    <!--COLOR-->
+    <color name="color_text_toolbar">#FFFFFF</color>
+    <color name="color_text_workout_set_item_list">#FFFFFF</color>
+    <color name="color_text_workout_timer">#FFFFFF</color>
+
+    <!--GRADIENT RESOURCE-->
     <color name="gradient_orange_start">#E95f62</color>
     <color name="gradient_orange_end">#F286A0</color>
     <color name="gradient_red_start">#FDB9BE</color>

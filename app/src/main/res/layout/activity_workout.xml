@@ -3,46 +3,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_background"
     tools:context=".ui.ExerciseActivity"
     android:orientation="vertical">
 
+    <!--START TOOLBAR-->
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_exercise_activity"
+        android:id="@+id/toolbar_custom"
         android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="#FFFFFF"
-        app:titleTextColor="@color/colorPrimary"
-        android:theme="@style/ToolbarTheme"/>
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_background">
+
+        <com.example.utils.MSPTextViewBold
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/toolbar_title_paddingStart"
+            android:paddingEnd="0dp"
+            android:text= "@string/app_name"
+            android:textColor="@color/color_text_toolbar"
+            android:textSize="@dimen/text_size_toolbar_title" />
+
+    </androidx.appcompat.widget.Toolbar>
+    <!--END TOOLBAR-->
 
     <LinearLayout
         android:id="@+id/llRestView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar_exercise_activity"
+        android:layout_below="@id/toolbar_custom"
         android:gravity="center"
         android:orientation="vertical"
-        android:visibility="invisible">
+        android:visibility="invisible"
+        >
 
-        <TextView
+        <com.example.utils.MSPTextViewBold
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="GET READY FOR"
-            android:textSize="22sp"
-            android:textColor="@color/colorAccent"
+            android:text="@string/workout_get_ready_for"
+            android:textSize="@dimen/text_size_extra_large"
+            android:textColor="@color/color_text_large"
             android:textStyle="bold"/>
 
         <FrameLayout
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/item_circular_color_accent_border">
+            android:background="@drawable/background_circle">
 
             <ProgressBar
                 android:id="@+id/progressBar"
                 style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:background="@drawable/circular_progress_gray"
                 android:indeterminate="false"
@@ -52,41 +66,40 @@
                 android:rotation="-90"/>
 
             <LinearLayout
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:gravity="center"
                 android:background="@drawable/item_circular_color_accent_background"
                 android:layout_gravity="center">
 
-                <TextView
+                <com.example.utils.MSPTextViewBold
                     android:id="@+id/tvTimer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#FFFFFF"
-                    android:textSize="25sp"
-                    android:textStyle="bold"
+                    android:textColor="@color/color_text_workout_timer"
+                    android:textSize="@dimen/text_size_rest_time"
                     tools:text = "10" />
 
 
             </LinearLayout>
         </FrameLayout>
 
-        <TextView
+        <com.example.utils.MSPTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="UPCOMING EXERCISE"
-            android:textSize="16sp" />
+            android:text="@string/workout_upcoming_exercise"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/color_text_normal"/>
 
-        <TextView
+        <com.example.utils.MSPTextViewBold
             android:id="@+id/tvUpcomingExerciseName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textColor= "@color/colorPrimary"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            tools:text = "Exercise Name"
+            android:textSize="@dimen/text_size_big"
+            tools:text = "@string/place_holder_workout_name"
             />
 
     </LinearLayout>
@@ -96,7 +109,7 @@
         android:id="@+id/llExerciseView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar_exercise_activity"
+        android:layout_below="@id/toolbar_custom"
         android:layout_above="@+id/rvExerciseStatus"
         android:gravity="right"
         android:orientation="vertical"
@@ -106,12 +119,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center|top">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="center|top"
                 android:layout_marginBottom="20dp">
                 <ImageView
                     android:id="@+id/ivImage"
@@ -119,7 +132,6 @@
                     android:layout_height="wrap_content"
                     android:scaleType="fitXY"
                     android:layout_weight="1"
-                    android:layout_marginTop="45dp"
                     android:contentDescription="@string/image"
                     android:src="@drawable/ex001"
                     />
@@ -130,29 +142,28 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical">
-                <TextView
+                <com.example.utils.MSPTextView
                     android:id="@+id/exerciseTvName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="EXERCISE TIME"
-                    android:textSize="18sp"
-                    android:textColor="@color/colorAccent"
+                    android:text="@string/workout_exercise_time"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/color_text_normal"
                     android:paddingRight="20dp"
                     android:textStyle="bold"/>
 
                 <FrameLayout
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
-
-                    android:background="@drawable/item_circular_color_accent_border">
+                    android:background="@drawable/background_circle">
 
                     <ProgressBar
                         android:id="@+id/exerciseProgressBar"
                         style="?android:attr/progressBarStyleHorizontal"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
                         android:layout_gravity="center"
                         android:background="@drawable/circular_progress_gray"
                         android:indeterminate="false"
@@ -162,19 +173,18 @@
                         android:rotation="-90"/>
 
                     <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:gravity="center"
                         android:background="@drawable/item_circular_color_accent_background"
                         android:layout_gravity="center">
 
-                        <TextView
+                        <com.example.utils.MSPTextViewBold
                             android:id="@+id/exerciseTvTimer"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textColor="#FFFFFF"
-                            android:textSize="25sp"
-                            android:textStyle="bold"
+                            android:textColor="@color/color_text_workout_timer"
+                            android:textSize="@dimen/text_size_exercise_time"
                             tools:text = "30" />
 
                     </LinearLayout>

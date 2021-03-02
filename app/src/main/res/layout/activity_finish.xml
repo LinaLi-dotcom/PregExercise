@@ -19,13 +19,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
-        android:text="END"
+        android:text="@string/finish_exercise_title"
         android:textColor="@color/colorAccent"
         android:textSize="35sp" />
 
     <LinearLayout
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
         android:background="@drawable/item_circular_color_accent_border"
@@ -33,8 +33,8 @@
 
         <!--Here the ic_action_done image in added in the drawables folders.-->
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:contentDescription="@string/image"
             android:src="@drawable/ic_action_done" />
     </LinearLayout>
@@ -43,14 +43,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="Congratulations!"
+        android:text="@string/finish_exercise_congratulations"
         android:textColor="#212121"
         android:textSize="18sp" />
 
     <TextView
+        android:id="@+id/tv_workout_set_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You have done the workout!"
+        android:text="@string/finish_exercise_set"
         android:textColor="#212121"
         android:textSize="18sp" />
 
@@ -61,7 +62,7 @@
         android:layout_gravity="bottom"
         android:layout_marginTop="35dp"
         android:background="@color/colorAccent"
-        android:text="FINISH"
+        android:text="@string/finish_exercise_button"
         android:textColor="#FFFFFF"
         android:textSize="18sp" />
 

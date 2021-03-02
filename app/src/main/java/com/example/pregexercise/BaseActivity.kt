@@ -1,19 +1,20 @@
 package com.example.pregexercise
 
 import android.app.Dialog
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Build
 import android.os.Handler
 import android.speech.tts.TextToSpeech
 import android.util.DisplayMetrics
 import android.util.Log
-import android.view.WindowInsets
-import android.view.WindowManager
+import android.view.*
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pregexercise.databinding.DialogCustomBackConfirmationBinding
 import com.example.pregexercise.databinding.DialogProgressBinding
+import com.example.pregexercise.ui.HistoryActivity
 import com.example.pregexercise.utils.Constants
 import java.io.IOException
 import java.util.*
@@ -22,35 +23,7 @@ import kotlin.math.roundToInt
 open class BaseActivity : AppCompatActivity() , TextToSpeech.OnInitListener{
     // A global variable for double back press feature.
     private var doubleBackToExitPressedOnce = false
-
     private var mShowingDialog:Boolean = false
-
-    /**
-     * Toolbar Activity
-
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.toolbar_go_to_dashboard, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
-        R.id.action_go_to_home -> {
-            val i = Intent(applicationContext, MainActivity::class.java)
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            i.putExtra("EXIT", true)
-            startActivity(i)
-            finish()
-            /*
-            finish()
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)*/
-            true
-        }
-        else -> super.onOptionsItemSelected(item)
-    }*/
 
     /**
      * Set full screen
@@ -237,8 +210,8 @@ open class BaseActivity : AppCompatActivity() , TextToSpeech.OnInitListener{
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
             // set US English as language for tts
-            //val result = tts!!.setLanguage(Locale.US)
-            val result = tts!!.setLanguage(Locale.forLanguageTag("TH"))
+            val result = tts!!.setLanguage(Locale.US)
+           // val result = tts!!.setLanguage(Locale.forLanguageTag("TH")) // Thai Speech
             tts!!.setSpeechRate(Constants.SPEECH_DELAY)
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e("TTS", "The Language specified is not supported!")

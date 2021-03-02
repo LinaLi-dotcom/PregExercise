@@ -32,7 +32,7 @@ object Constants {
                 Log.i("WorkoutSetName >>", rowItem.setName)
                 workoutItems = ArrayList()
                  for (item in rowItem.workouts) {
-                    Log.i("     restTime >>", item.restTime.toString())
+                    //Log.i("     restTime >>", item.restTime.toString())
                     /**
                      * Save workout to  WorkoutModel
                      */

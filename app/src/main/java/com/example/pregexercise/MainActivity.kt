@@ -8,15 +8,15 @@ import com.example.pregexercise.databinding.ActivityMainBinding
 import com.example.pregexercise.ui.WorkoutSetActivity
 
 @Suppress("DEPRECATION")
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
+        setFullScreen()
 
         Handler().postDelayed(
             {

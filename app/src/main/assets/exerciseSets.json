@@ -104,55 +104,6 @@
           "imageName": "set02_ex03",
           "workoutTime": 5,
           "restTime" : 5
-        },
-        {
-          "id": "S02E04",
-          "name": "Set-02-Exercise-04",
-          "imageName": "set02_ex04",
-          "workoutTime": 5,
-          "restTime" : 5
-        },
-        {
-          "id": "S02E05",
-          "name": "Set-02-Exercise-05",
-          "imageName": "set02_ex05",
-          "workoutTime": 5,
-          "restTime" : 5
-        },
-        {
-          "id": "S02E06",
-          "name": "Set-02-Exercise-06",
-          "imageName": "set02_ex06",
-          "workoutTime": 5,
-          "restTime" : 5
-        },
-        {
-          "id": "S02E07",
-          "name": "Set-02-Exercise-07",
-          "imageName": "set02_ex07",
-          "workoutTime": 5,
-          "restTime" : 5
-        },
-        {
-          "id": "S02E08",
-          "name": "Set-02-Exercise-08",
-          "imageName": "set02_ex08",
-          "workoutTime": 5,
-          "restTime" : 5
-        },
-        {
-          "id": "S02E09",
-          "name": "Set-02-Exercise-09",
-          "imageName": "set02_ex09",
-          "workoutTime": 5,
-          "restTime" : 5
-        },
-        {
-          "id": "S02E10",
-          "name": "Set-02-Exercise-10",
-          "imageName": "set02_ex10",
-          "workoutTime": 5,
-          "restTime" : 5
         }
       ]
     }

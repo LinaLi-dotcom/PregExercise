@@ -3,6 +3,9 @@
 
     <string name="toolbar_workout_set">Workout Set</string>
     <string name="toolbar_workout_list">Workout List</string>
+    <string name="toolbar_workout">Work Out</string>
+    <string name="toolbar_workout_history">Workout History</string>
+
 
 
     <string name="image">exericise image</string>
@@ -10,4 +13,34 @@
 
     <string name="please_wait">Please Wait ...</string>
     <string name="please_click_back_again_to_exit">Click again to exit</string>
+
+    <!--MAIN ACTIVITY-->
+    <string name="main_title">Exercise</string>
+    <string name="main_description">for pregnancy</string>
+    <!--WORKOUT SET ACTIVITY-->
+    <string name="workout_set_title">Set Name</string>
+
+    <!--WORKOUT ACTIVITY-->
+    <string name="workout_get_ready_for">GET READY FOR</string>
+    <string name="workout_exercise_time">EXERCISE TIME</string>
+    <string name="workout_upcoming_exercise">UPCOMING EXERCISE</string>
+    <string name="place_holder_workout_name">Exercise Name</string>
+
+
+    <!--FINISH ACTIVITY-->
+    <string name="finish_exercise_title">Mission Completed</string>
+    <string name="finish_exercise_congratulations">Congratulations!</string>
+    <string name="finish_exercise_set">You have done the ##!</string>
+    <string name="finish_exercise_button">FINISH</string>
+
+    <!--HISTORY ACTIVITY-->
+    <string name="exercise_completed_header">EXERCISE COMPLETED</string>
+
+    <!--RECYCLEVIEW-->
+    <string name="empty_data">EMPTY DATA</string>
+    <string name="place_holder_exercise_name">Exercise Name</string>
+    <string name="place_holder_exercise_time">Time</string>
+
+
+
 </resources>

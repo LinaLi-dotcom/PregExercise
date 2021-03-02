@@ -19,31 +19,33 @@
             <LinearLayout
                 android:id="@+id/ll_workout_set"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:paddingBottom="5dp"
-
+                android:layout_marginRight="25dp"
+                android:layout_alignParentBottom="true"
                 >
+                <!--WORKOUT SET TITLE-->
                 <com.example.utils.MSPTextViewBold
                     android:id="@+id/tv_workout_set_title"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="bottom|right"
-                    android:padding="10dp"
-                    android:text= "Exercise Name"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/workout_set_title_size" />
-
+                    android:padding="5dp"
+                    android:text= "@string/workout_set_title"
+                    android:textColor="@color/color_text_workout_set_item_list"
+                    android:textSize="@dimen/text_size_extra_large" />
+                <!--WORKOUT SET DESCRIPTION-->
                 <com.example.utils.MSPTextViewBold
                     android:id="@+id/tv_workout_set_description"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="bottom|right"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:text= "Exercise Name"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/workout_set_description_size" />
+                    android:textColor="@color/color_text_workout_set_item_list"
+                    android:textSize="@dimen/text_size_normal" />
             </LinearLayout>
         </RelativeLayout>
 </LinearLayout>

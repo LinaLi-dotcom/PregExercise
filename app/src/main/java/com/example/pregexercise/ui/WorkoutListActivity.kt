@@ -4,6 +4,8 @@ import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,16 +32,16 @@ class WorkoutListActivity : BaseActivity() {
 
         binding = ActivityWorkoutListBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setupActionBar()
 
         if (intent.hasExtra(Constants.INTENT_WORKOUT_SET_ID)) {
             mSetId = intent.getStringExtra(Constants.INTENT_WORKOUT_SET_ID)!!
         }
         if (intent.hasExtra(Constants.INTENT_WORKOUT_SET_NAME)) {
             mSetName = intent.getStringExtra(Constants.INTENT_WORKOUT_SET_NAME)!!
-            binding.tvWorkoutListTitle.text = mSetName
+            //binding.tvWorkoutListTitle.text = mSetName
         }
 
+        setupActionBar()
         getRowsData()
 
         binding.btnStartExercise.setOnClickListener {
@@ -56,11 +58,10 @@ class WorkoutListActivity : BaseActivity() {
         mWorkoutSetItems = Constants.getWorkoutItems(this)
         if (mWorkoutSetItems.size > 0) {
             /*** WORKOUT LIST* */
-            mWorkoutSetItems!!.filter { it.id == mSetId }.forEach { selectedSet ->
+            mWorkoutSetItems.filter { it.id == mSetId }.forEach { selectedSet ->
 
                 mWorkoutListItems = selectedSet.workouts!!
             }
-
             binding.rvDataItems.visibility = View.VISIBLE
             binding.tvNoItemsFound.visibility = View.GONE
 
@@ -70,10 +71,10 @@ class WorkoutListActivity : BaseActivity() {
                 binding.rvDataItems.layoutManager = GridLayoutManager(this, 2)
             } else {
                 // In portrait
-                binding!!.rvDataItems.layoutManager = LinearLayoutManager(this)
+                binding.rvDataItems.layoutManager = LinearLayoutManager(this)
             }
 
-            binding!!.rvDataItems.setHasFixedSize(true)
+            binding.rvDataItems.setHasFixedSize(true)
             val itemAdapter = WorkoutAdapter(this@WorkoutListActivity, mWorkoutListItems)
             // adapter instance is set to the recyclerview to inflate the items.
             binding.rvDataItems.adapter = itemAdapter
@@ -88,7 +89,7 @@ class WorkoutListActivity : BaseActivity() {
 
     private fun setupActionBar() {
         setSupportActionBar(binding.toolbarCustom)
-        binding.tvTitle.text = resources.getString(R.string.toolbar_workout_list)
+        binding.tvTitle.text = mSetName //resources.getString(R.string.toolbar_workout_list)
 
         val actionBar = supportActionBar
         if (actionBar != null) {
@@ -98,6 +99,23 @@ class WorkoutListActivity : BaseActivity() {
         binding.toolbarCustom.setNavigationOnClickListener {
             onBackPressed()
         }
+    }
+
+    /**
+     * Toolbar Activity
+     */
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_toolbar, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
+        R.id.go_to_history -> {
+            val intent = Intent(this, HistoryActivity::class.java)
+            startActivity(intent)
+            true
+        }
+        else -> super.onOptionsItemSelected(item)
     }
 
 }

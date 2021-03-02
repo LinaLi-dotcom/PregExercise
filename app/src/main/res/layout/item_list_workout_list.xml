@@ -19,8 +19,6 @@
             android:layout_width="70dp"
             android:layout_height="match_parent"
             android:src="@drawable/set01_ex01"/>
-
-
         <LinearLayout
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -33,20 +31,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:padding="10dp"
-                android:text= "Exercise Name"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/workout_list_title_size" />
+                android:padding="5dp"
+                android:text= "@string/place_holder_exercise_name"
+                android:textColor="@color/color_text_normal"
+                android:textSize="@dimen/text_size_normal" />
 
             <com.example.utils.MSPTextView
                 android:id="@+id/tv_timer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:padding="10dp"
-                android:text= "Exercise Name"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/workout_list_description_size" />
+                android:padding="5dp"
+                android:text= "@string/place_holder_exercise_time"
+                android:textColor="@color/color_text_normal"
+                android:textSize="@dimen/text_size_normal" />
         </LinearLayout>
     </LinearLayout>
 
