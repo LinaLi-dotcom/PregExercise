@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--COMMON TEXT SIZE-->
+    <dimen name="text_size_extra_large">30sp</dimen>
+    <dimen name="text_size_large">25sp</dimen>
+    <dimen name="text_size_big">22sp</dimen>
+    <dimen name="text_size_normal">18sp</dimen>
+    <dimen name="text_size_small">18sp</dimen>
+    <dimen name="text_size_rest_time">50sp</dimen>
+    <dimen name="text_size_exercise_time">30sp</dimen>
+
+    <!--TOOLBAR-->
+    <dimen name="toolbar_title_paddingStart">-20dp</dimen>
+    <dimen name="text_size_toolbar_title">18sp</dimen>
+
+    <dimen name="workout_set_title_size">30sp</dimen>
+    <dimen name="workout_set_description_size">30sp</dimen>
+    <dimen name="workout_list_title_size">15sp</dimen>
+    <dimen name="workout_list_description_size">14sp</dimen>
+
     <dimen name="main_screen_image_height">220dp</dimen>
     <dimen name="main_screen_main_layout_padding">5dp</dimen>
     <dimen name="start_button_size">150dp</dimen>
@@ -7,6 +25,11 @@
     <dimen name="start_button_label_textsize">22sp</dimen>
 
 
+    <dimen name="button_background_radius">10sp</dimen>
 
+    <dimen name="progress_dialog_content_padding">10dp</dimen>
+    <dimen name="progress_bar_size">50dp</dimen>
+    <dimen name="progress_text_marginStart">16dp</dimen>
+    <dimen name="progress_text_size">16sp</dimen>
 
 </resources>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_background"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -15,29 +16,26 @@
         >
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/main_screen_image_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:contentDescription="@string/image"
-            android:src="@drawable/img_main_page"/>
+            android:src="@drawable/launch_image"/>
 
-        <LinearLayout
-            android:id="@+id/llStart"
-            android:layout_width="@dimen/start_button_size"
-            android:layout_height="@dimen/start_button_size"
-            android:layout_marginTop="@dimen/start_button_margin_top"
-            android:gravity="center"
-            android:background="@drawable/item_circular_color_accent_border">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_title"
+            android:textColor="@color/color_text_extra_large"
+            android:textSize="@dimen/text_size_extra_large"
+            />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/str_start"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/start_button_label_textsize"
-                />
-        </LinearLayout>
-
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_description"
+            android:textColor="@color/color_text_normal"
+            android:textSize="@dimen/text_size_normal"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
