@@ -8,8 +8,8 @@
       "workouts": [
         {
           "id": "S01E01",
-          "name": "Set-01-Exercise-01",
           "imageName": "set01_ex01",
+          "name": "ic_testsexton.xml",
           "workoutTime": 5,
           "restTime" : 2
         },
