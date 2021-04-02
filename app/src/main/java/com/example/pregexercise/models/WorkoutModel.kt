@@ -37,7 +37,6 @@ data class WorkoutSetModel (
     var workouts: ArrayList<WorkoutModel>?
 )
 
-
 data class WorkoutModel (
     var id: String,
     var name: String,
