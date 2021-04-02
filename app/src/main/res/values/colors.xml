@@ -21,11 +21,11 @@
     <color name="row_even_background">#e4fbff</color>
 
     <!--COLOR BY TEXT SIZE-->
-    <color name="color_text_extra_large">#E95f62</color>
-    <color name="color_text_big">#E95f62</color>
-    <color name="color_text_large">#E95f62</color>
-    <color name="color_text_normal">#E95A7D</color>
-    <color name="color_text_small">#E95A7D</color>
+    <color name="color_text_extra_large">#886847</color>
+    <color name="color_text_big">#886847</color>
+    <color name="color_text_large">#886847</color>
+    <color name="color_text_normal">#886847</color>
+    <color name="color_text_small">#886847</color>
 
     <!--COLOR-->
     <color name="color_text_toolbar">#FFFFFF</color>
