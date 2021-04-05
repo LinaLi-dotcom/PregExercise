@@ -4,77 +4,70 @@
       "id": "S01",
       "setName": "Set one",
       "setImageName": "set01",
-      "setDescription":"setDescription - 01",
+      "setDescription": "setDescription - 01",
       "workouts": [
         {
           "id": "S01E01",
-          "imageName": "set01_ex01",
-          "name": "ic_testsexton.xml",
+          "name": "Set-01-Exercise-01",
+          "imageName": "ic_one",
           "workoutTime": 5,
-          "restTime" : 2
+          "restTime": 2
         },
         {
           "id": "S01E02",
           "name": "Set-01-Exercise-02",
-          "imageName": "set01_ex02",
+          "imageName": "ic_two",
           "workoutTime": 5,
-          "restTime" : 3
+          "restTime": 3
         },
         {
           "id": "S01E03",
           "name": "Set-01-Exercise-03",
-          "imageName": "set01_ex03",
+          "imageName": "ic_three",
           "workoutTime": 5,
-          "restTime" : 4
+          "restTime": 4
         },
         {
           "id": "S01E04",
           "name": "Set-01-Exercise-04",
-          "imageName": "set01_ex04",
+          "imageName": "ic_four",
           "workoutTime": 5,
-          "restTime" : 5
+          "restTime": 5
         },
         {
           "id": "S01E05",
           "name": "Set-01-Exercise-05",
-          "imageName": "set01_ex05",
+          "imageName": "ic_five",
           "workoutTime": 5,
-          "restTime" : 2
+          "restTime": 2
         },
         {
           "id": "S01E06",
           "name": "Set-01-Exercise-06",
-          "imageName": "set01_ex06",
+          "imageName": "ic_six",
           "workoutTime": 5,
-          "restTime" : 3
+          "restTime": 3
         },
         {
           "id": "S01E07",
           "name": "Set-01-Exercise-07",
-          "imageName": "set01_ex07",
+          "imageName": "ic_seven",
           "workoutTime": 5,
-          "restTime" : 4
+          "restTime": 4
         },
         {
           "id": "S01E08",
           "name": "Set-01-Exercise-08",
-          "imageName": "set01_ex08",
+          "imageName": "ic_eight",
           "workoutTime": 5,
-          "restTime" : 5
+          "restTime": 5
         },
         {
           "id": "S01E09",
           "name": "Set-01-Exercise-09",
-          "imageName": "set01_ex09",
+          "imageName": "ic_nine",
           "workoutTime": 5,
-          "restTime" : 2
-        },
-        {
-          "id": "S01E10",
-          "name": "Set-01-Exercise-10",
-          "imageName": "set01_ex10",
-          "workoutTime": 5,
-          "restTime" : 3
+          "restTime": 2
         }
       ]
     },
@@ -82,28 +75,312 @@
       "id": "S02",
       "setName": "Set two",
       "setImageName": "set02",
-      "setDescription":"setDescription - 01",
+      "setDescription": "setDescription - 01 - workout with baby",
       "workouts": [
         {
           "id": "S02E01",
           "name": "Set-02-Exercise-01",
-          "imageName": "set02_ex01",
+          "imageName": "ic_twentyfive",
           "workoutTime": 5,
-          "restTime" : 5
+          "restTime": 5
         },
         {
           "id": "S02E02",
           "name": "Set-02-Exercise-02",
-          "imageName": "set02_ex02",
+          "imageName": "ic_twentysix",
           "workoutTime": 5,
-          "restTime" : 5
+          "restTime": 5
         },
         {
           "id": "S02E03",
           "name": "Set-02-Exercise-03",
-          "imageName": "set02_ex03",
+          "imageName": "ic_twentyseven",
           "workoutTime": 5,
-          "restTime" : 5
+          "restTime": 5
+        },
+        {
+          "id": "S02E03",
+          "name": "Set-02-Exercise-03",
+          "imageName": "ic_twentyeight",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S02E03",
+          "name": "Set-02-Exercise-03",
+          "imageName": "ic_twentynine",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S02E03",
+          "name": "Set-02-Exercise-03",
+          "imageName": "ic_thirty",
+          "workoutTime": 5,
+          "restTime": 5
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "setName": "Set three",
+      "setImageName": "",
+      "setDescription": "setDescription - 01 - yoga",
+      "workouts": [
+        {
+          "id": "S03E01",
+          "name": "Set-03-Exercise-01",
+          "imageName": "ic_ten",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S03E02",
+          "name": "Set-03-Exercise-02",
+          "imageName": "ic_eleven",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S03E03",
+          "name": "Set-03-Exercise-03",
+          "imageName": "ic_twelve",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S03E03",
+          "name": "Set-03-Exercise-04",
+          "imageName": "ic_thirteen",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S03E03",
+          "name": "Set-03-Exercise-05",
+          "imageName": "ic_fourteen",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S03E03",
+          "name": "Set-03-Exercise-06",
+          "imageName": "ic_fifteen",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S03E03",
+          "name": "Set-03-Exercise-07",
+          "imageName": "ic_sixteen",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S03E03",
+          "name": "Set-03-Exercise-08",
+          "imageName": "ic_seventeen",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S03E03",
+          "name": "Set-03-Exercise-09",
+          "imageName": "ic_eighteen",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S04",
+          "setName": "Set four",
+          "setImageName": "set01",
+          "setDescription": "setDescription - 04 - Back and Hip",
+          "workouts": [
+            {
+              "id": "S04E01",
+              "name": "Set-04-Exercise-01",
+              "imageName": "ic_nineteen",
+              "workoutTime": 5,
+              "restTime": 5
+            },
+            {
+              "id": "S04E02",
+              "name": "Set-04-Exercise-02",
+              "imageName": "ic_twenty",
+              "workoutTime": 5,
+              "restTime": 5
+            },
+            {
+              "id": "S04E03",
+              "name": "Set-04-Exercise-03",
+              "imageName": "ic_twentyone",
+              "workoutTime": 5,
+              "restTime": 5
+            },
+            {
+              "id": "S04E04",
+              "name": "Set-04-Exercise-04",
+              "imageName": "ic_twentytwo",
+              "workoutTime": 5,
+              "restTime": 5
+            },
+            {
+              "id": "S04E05",
+              "name": "Set-04-Exercise-05",
+              "imageName": "ic_twentythree",
+              "workoutTime": 5,
+              "restTime": 5
+            },
+            {
+              "id": "S04E06",
+              "name": "Set-04-Exercise-06",
+              "imageName": "ic_twentyfour",
+              "workoutTime": 5,
+              "restTime": 5
+            },
+            {
+              "id": "S05",
+              "setName": "Set five",
+              "setImageName": "",
+              "setDescription": "setDescription - 05 - Workout with ball",
+              "workouts": [
+                {
+                  "id": "S05E01",
+                  "name": "Set-05-Exercise-01",
+                  "imageName": "ic_thirtyone",
+                  "workoutTime": 5,
+                  "restTime": 5
+                },
+                {
+                  "id": "S05E02",
+                  "name": "Set-05-Exercise-02",
+                  "imageName": "ic_thirtytwo",
+                  "workoutTime": 5,
+                  "restTime": 5
+                },
+                {
+                  "id": "S05E03",
+                  "name": "Set-05-Exercise-03",
+                  "imageName": "ic_thirtythree",
+                  "workoutTime": 5,
+                  "restTime": 5
+                },
+                {
+                  "id": "S05E04",
+                  "name": "Set-05-Exercise-04",
+                  "imageName": "ic_thirtyfour",
+                  "workoutTime": 5,
+                  "restTime": 5
+                },
+                {
+                  "id": "S05E05",
+                  "name": "Set-05-Exercise-05",
+                  "imageName": "ic_thirtyfive",
+                  "workoutTime": 5,
+                  "restTime": 5
+                },
+                {
+                  "id": "S05E06",
+                  "name": "Set-05-Exercise-06",
+                  "imageName": "ic_thirtysix",
+                  "workoutTime": 5,
+                  "restTime": 5
+                },
+                {
+                  "id": "S05E07",
+                  "name": "Set-05-Exercise-07",
+                  "imageName": "ic_thirtyseven",
+                  "workoutTime": 5,
+                  "restTime": 5
+                },
+                {
+                  "id": "S05E08",
+                  "name": "Set-05-Exercise-08",
+                  "imageName": "ic_thirtyeight",
+                  "workoutTime": 5,
+                  "restTime": 5
+                },
+                {
+                  "id": "S05E09",
+                  "name": "Set-05-Exercise-09",
+                  "imageName": "ic_thirtysix",
+                  "workoutTime": 5,
+                  "restTime": 5
+                },
+                {
+                  "id": "S06",
+                  "setName": "Set six",
+                  "setImageName": "",
+                  "setDescription": "setDescription - 05 - Workout with dumbells",
+                  "workouts": [
+                    {
+                      "id": "S06E01",
+                      "name": "Set-06-Exercise-01",
+                      "imageName": "ic_sixtytwo",
+                      "workoutTime": 5,
+                      "restTime": 5
+                    },
+                    {
+                      "id": "S06E02",
+                      "name": "Set-06-Exercise-02",
+                      "imageName": "ic_sixtythree",
+                      "workoutTime": 5,
+                      "restTime": 5
+                    },
+                    {
+                      "id": "S06E03",
+                      "name": "Set-06-Exercise-03",
+                      "imageName": "ic_sixtyfour",
+                      "workoutTime": 5,
+                      "restTime": 5
+                    },
+                    {
+                      "id": "S06E04",
+                      "name": "Set-06-Exercise-04",
+                      "imageName": "ic_sixtyfive",
+                      "workoutTime": 5,
+                      "restTime": 5
+                    },
+                    {
+                      "id": "S06E05",
+                      "name": "Set-06-Exercise-05",
+                      "imageName": "ic_sixtysix",
+                      "workoutTime": 5,
+                      "restTime": 5
+                    },
+                    {
+                      "id": "S06E06",
+                      "name": "Set-06-Exercise-06",
+                      "imageName": "ic_sixtyseven",
+                      "workoutTime": 5,
+                      "restTime": 5
+                    },
+                    {
+                      "id": "S06E07",
+                      "name": "Set-6-Exercise-07",
+                      "imageName": "ic_sixtyeight",
+                      "workoutTime": 5,
+                      "restTime": 5
+                    },
+                    {
+                      "id": "S06E08",
+                      "name": "Set-06-Exercise-08",
+                      "imageName": "ic_sixtynine",
+                      "workoutTime": 5,
+                      "restTime": 5
+                    },
+                    {
+                      "id": "S06E09",
+                      "name": "Set-06-Exercise-09",
+                      "imageName": "ic_seventy",
+                      "workoutTime": 5,
+                      "restTime": 5
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }
