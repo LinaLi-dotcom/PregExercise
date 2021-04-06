@@ -12,8 +12,6 @@ object Constants {
     const val INTENT_WORKOUT_SET_ID = "workout_set_id"
     const val INTENT_WORKOUT_SET_NAME = "workout_set_name"
 
-
-
     fun getWorkoutItems(context: Context) : ArrayList<WorkoutSetModel> {
         val workoutSetItems : ArrayList<WorkoutSetModel> = ArrayList()
         var workoutItems : ArrayList<WorkoutModel>
@@ -45,8 +43,6 @@ object Constants {
                          item.restTime,
                          false,
                          false
-
-
                     )
                      workoutItems.add(workoutItem)
                 }

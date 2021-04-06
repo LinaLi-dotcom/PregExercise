@@ -8,8 +8,8 @@
       "workouts": [
         {
           "id": "S01E01",
-          "name": "Set-01-Exercise-01",
-          "imageName": "ic_one",
+          "imageName": "set01_ex01",
+          "name": "set01_ex01",
           "workoutTime": 5,
           "restTime": 2
         },
