@@ -42,7 +42,8 @@ object Constants {
 
                      workoutItem = WorkoutModel(
                         item.id,
-                        "test",//item.name,
+                         //"test",
+                        item.name,
                         imageResource,
                          item.workoutTime,
                          item.restTime,
