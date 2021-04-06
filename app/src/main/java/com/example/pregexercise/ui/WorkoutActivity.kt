@@ -52,8 +52,12 @@ class WorkoutActivity : BaseActivity(){
         binding = ActivityWorkoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        if (intent.hasExtra(Constants.INTENT_WORKOUT_SET_ID)) {
+            mSetId = intent.getStringExtra(Constants.INTENT_WORKOUT_SET_ID)!!
+        }
+
         if (intent.hasExtra(Constants.INTENT_WORKOUT_EXERCISE_ID)) {
-            mSetName = intent.getStringExtra(Constants.INTENT_WORKOUT_EXERCISE_ID)!!
+            mExerciseId = intent.getStringExtra(Constants.INTENT_WORKOUT_EXERCISE_ID)!!
         }
         setupActionBar()
 
@@ -63,10 +67,14 @@ class WorkoutActivity : BaseActivity(){
 
         // Get exercise List
         mWorkoutListItems = getRowsData()
+        // get Current Exercise
+        currentExercisePosition = getCurrentExercisePosition()
         // Start with rest timer
         setupRestView()
         // set RecyclerView
         setupExerciseStatusRecyclerView()
+
+        Log.i("Intent >>", "setId: $mSetId exId : $mExerciseId")
 
     }
 
@@ -78,6 +86,18 @@ class WorkoutActivity : BaseActivity(){
             mWorkoutListItems = selectedSet.workouts!!
         }
         return  mWorkoutListItems
+    }
+
+    private fun getCurrentExercisePosition(): Int {
+        if (mExerciseId != "") {
+            for ((i, item) in mWorkoutListItems!!.withIndex()) {
+                if (item.id == mExerciseId) {
+                    currentExercisePosition = i - 1
+                    return  currentExercisePosition
+                }
+            }
+        }
+        return currentExercisePosition // -1
     }
 
     override fun onDestroy() {
