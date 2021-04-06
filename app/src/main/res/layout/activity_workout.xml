@@ -131,7 +131,7 @@
                     android:scaleType="fitXY"
                     android:layout_weight="1"
                     android:contentDescription="@string/image"
-                    android:src="@drawable/ic_eight"
+                    android:src="@drawable/set01_ex01"
                     />
             </LinearLayout>
 

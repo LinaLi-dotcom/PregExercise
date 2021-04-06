@@ -310,77 +310,77 @@
           "imageName": "ic_thirtysix",
           "workoutTime": 5,
           "restTime": 5
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "setName": "Set six",
+      "setImageName": "",
+      "setDescription": "setDescription - 05 - Workout with dumbells",
+      "workouts": [
+        {
+          "id": "S06E01",
+          "name": "Set-06-Exercise-01",
+          "imageName": "ic_sixtytwo",
+          "workoutTime": 5,
+          "restTime": 5
         },
         {
-          "id": "S06",
-          "setName": "Set six",
-          "setImageName": "",
-          "setDescription": "setDescription - 05 - Workout with dumbells",
-          "workouts": [
-            {
-              "id": "S06E01",
-              "name": "Set-06-Exercise-01",
-              "imageName": "ic_sixtytwo",
-              "workoutTime": 5,
-              "restTime": 5
-            },
-            {
-              "id": "S06E02",
-              "name": "Set-06-Exercise-02",
-              "imageName": "ic_sixtythree",
-              "workoutTime": 5,
-              "restTime": 5
-            },
-            {
-              "id": "S06E03",
-              "name": "Set-06-Exercise-03",
-              "imageName": "ic_sixtyfour",
-              "workoutTime": 5,
-              "restTime": 5
-            },
-            {
-              "id": "S06E04",
-              "name": "Set-06-Exercise-04",
-              "imageName": "ic_sixtyfive",
-              "workoutTime": 5,
-              "restTime": 5
-            },
-            {
-              "id": "S06E05",
-              "name": "Set-06-Exercise-05",
-              "imageName": "ic_sixtysix",
-              "workoutTime": 5,
-              "restTime": 5
-            },
-            {
-              "id": "S06E06",
-              "name": "Set-06-Exercise-06",
-              "imageName": "ic_sixtyseven",
-              "workoutTime": 5,
-              "restTime": 5
-            },
-            {
-              "id": "S06E07",
-              "name": "Set-6-Exercise-07",
-              "imageName": "ic_sixtyeight",
-              "workoutTime": 5,
-              "restTime": 5
-            },
-            {
-              "id": "S06E08",
-              "name": "Set-06-Exercise-08",
-              "imageName": "ic_sixtynine",
-              "workoutTime": 5,
-              "restTime": 5
-            },
-            {
-              "id": "S06E09",
-              "name": "Set-06-Exercise-09",
-              "imageName": "ic_seventy",
-              "workoutTime": 5,
-              "restTime": 5
-            }
-          ]
+          "id": "S06E02",
+          "name": "Set-06-Exercise-02",
+          "imageName": "ic_sixtythree",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S06E03",
+          "name": "Set-06-Exercise-03",
+          "imageName": "ic_sixtyfour",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S06E04",
+          "name": "Set-06-Exercise-04",
+          "imageName": "ic_sixtyfive",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S06E05",
+          "name": "Set-06-Exercise-05",
+          "imageName": "ic_sixtysix",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S06E06",
+          "name": "Set-06-Exercise-06",
+          "imageName": "ic_sixtyseven",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S06E07",
+          "name": "Set-6-Exercise-07",
+          "imageName": "ic_sixtyeight",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S06E08",
+          "name": "Set-06-Exercise-08",
+          "imageName": "ic_sixtynine",
+          "workoutTime": 5,
+          "restTime": 5
+        },
+        {
+          "id": "S06E09",
+          "name": "Set-06-Exercise-09",
+          "imageName": "ic_seventy",
+          "workoutTime": 5,
+          "restTime": 5
         }
       ]
     },
