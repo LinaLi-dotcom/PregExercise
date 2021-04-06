@@ -79,8 +79,6 @@
                     android:textColor="@color/color_text_workout_timer"
                     android:textSize="@dimen/text_size_rest_time"
                     tools:text = "10" />
-
-
             </LinearLayout>
         </FrameLayout>
 
@@ -191,10 +189,6 @@
                 </FrameLayout>
             </LinearLayout>
         </LinearLayout>
-
-
-
-
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

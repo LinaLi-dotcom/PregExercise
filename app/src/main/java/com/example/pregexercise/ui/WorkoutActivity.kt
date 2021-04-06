@@ -25,7 +25,6 @@ class WorkoutActivity : BaseActivity(){
     private var mSetId: String = ""
     private var mSetName: String = ""
 
-
     private var restTimer: CountDownTimer? = null
     private var restProgress = 0
 

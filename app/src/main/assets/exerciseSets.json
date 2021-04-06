@@ -383,6 +383,64 @@
           ]
         }
       ]
+    },
+    {
+      "id": "S03",
+      "setName": "Set two",
+      "setImageName": "set02",
+      "setDescription":"setDescription - 01",
+      "workouts": [
+        {
+          "id": "S02E01",
+          "name": "Set-02-Exercise-01",
+          "imageName": "set02_ex01",
+          "workoutTime": 5,
+          "restTime" : 5
+        },
+        {
+          "id": "S02E02",
+          "name": "Set-02-Exercise-02",
+          "imageName": "set02_ex02",
+          "workoutTime": 5,
+          "restTime" : 5
+        },
+        {
+          "id": "S02E03",
+          "name": "Set-02-Exercise-03",
+          "imageName": "set02_ex03",
+          "workoutTime": 5,
+          "restTime" : 5
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "setName": "Set two",
+      "setImageName": "set02",
+      "setDescription":"Back pain",
+      "workouts": [
+        {
+          "id": "S02E01",
+          "name": "Set-02-Exercise-01",
+          "imageName": "set02_ex01",
+          "workoutTime": 5,
+          "restTime" : 2
+        },
+        {
+          "id": "S02E02",
+          "name": "Set-02-Exercise-02",
+          "imageName": "set02_ex02",
+          "workoutTime": 5,
+          "restTime" : 5
+        },
+        {
+          "id": "S02E03",
+          "name": "Set-02-Exercise-03",
+          "imageName": "set02_ex03",
+          "workoutTime": 5,
+          "restTime" : 5
+        }
+      ]
     }
   ]
 }
