@@ -19,6 +19,7 @@ import com.example.pregexercise.ui.adepters.WorkoutSetAdapter
 import com.example.pregexercise.utils.Constants
 
 class WorkoutListActivity : BaseActivity() {
+
     private lateinit var binding: ActivityWorkoutListBinding
 
     private lateinit var mWorkoutSetItems : ArrayList<WorkoutSetModel>

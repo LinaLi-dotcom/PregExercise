@@ -24,6 +24,7 @@ class WorkoutActivity : BaseActivity(){
 
     private var mSetId: String = ""
     private var mSetName: String = ""
+    private var mExerciseId: String = ""
 
     private var restTimer: CountDownTimer? = null
     private var restProgress = 0
@@ -51,11 +52,8 @@ class WorkoutActivity : BaseActivity(){
         binding = ActivityWorkoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        if (intent.hasExtra(Constants.INTENT_WORKOUT_SET_ID)) {
-            mSetId = intent.getStringExtra(Constants.INTENT_WORKOUT_SET_ID)!!
-        }
-        if (intent.hasExtra(Constants.INTENT_WORKOUT_SET_NAME)) {
-            mSetName = intent.getStringExtra(Constants.INTENT_WORKOUT_SET_NAME)!!
+        if (intent.hasExtra(Constants.INTENT_WORKOUT_EXERCISE_ID)) {
+            mSetName = intent.getStringExtra(Constants.INTENT_WORKOUT_EXERCISE_ID)!!
         }
         setupActionBar()
 
@@ -75,6 +73,8 @@ class WorkoutActivity : BaseActivity(){
     private fun getRowsData() : ArrayList<WorkoutModel>? {
         /*** WORKOUT LIST* */
         Constants.getWorkoutItems(this).filter { it.id == mSetId }.forEach { selectedSet ->
+            mSetId = selectedSet.id
+            mSetName = selectedSet.setName
             mWorkoutListItems = selectedSet.workouts!!
         }
         return  mWorkoutListItems
