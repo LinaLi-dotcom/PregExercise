@@ -76,7 +76,7 @@ class WorkoutListActivity : BaseActivity() {
             }
 
             binding.rvDataItems.setHasFixedSize(true)
-            val itemAdapter = WorkoutAdapter(this@WorkoutListActivity, mWorkoutListItems)
+            val itemAdapter = WorkoutAdapter(this@WorkoutListActivity, mSetId, mWorkoutListItems)
             // adapter instance is set to the recyclerview to inflate the items.
             binding.rvDataItems.adapter = itemAdapter
         } else {
