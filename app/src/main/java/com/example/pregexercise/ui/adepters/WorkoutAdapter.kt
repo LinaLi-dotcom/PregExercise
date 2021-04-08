@@ -39,7 +39,7 @@ class WorkoutAdapter(val context: Context,
 
         fun bind(rowData: WorkoutModel) {
             itemBinding.tvWorkoutListTitle.text = rowData.name
-            itemBinding.tvTimer.text = rowData.workoutTime.toString()
+            itemBinding.tvTimer.text = rowData.workoutTime.toString() + " seconds"
             GlobalFunctions(context).loadPictureFromDrawableId(rowData.imageName, itemBinding.ivWorkoutList)
 
             itemBinding.llRow.setOnClickListener {
