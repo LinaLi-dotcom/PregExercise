@@ -26,6 +26,7 @@ class WorkoutSetActivity : BaseActivity(), View.OnClickListener {
 
         binding = ActivityWorkoutSetBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        //set up viewbinding
 
         setupActionBar()
 
@@ -59,9 +60,13 @@ class WorkoutSetActivity : BaseActivity(), View.OnClickListener {
             }
 
             binding!!.rvDataItems.setHasFixedSize(true)
+
+            //set up adapter
             val itemAdapter = WorkoutSetAdapter(this@WorkoutSetActivity, mWorkoutSetItems)
             // adapter instance is set to the recyclerview to inflate the items.
             binding.rvDataItems.adapter = itemAdapter
+
+
         } else {
             binding.rvDataItems.visibility = View.GONE
             binding.tvNoItemsFound.visibility = View.VISIBLE

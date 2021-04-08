@@ -39,8 +39,8 @@
     <color name="gradient_red_end">#E95A7D</color>
     <color name="gradient_green_start">#DFF7DF</color>
     <color name="gradient_green_end">#98F286</color>
-    <color name="gradient_blue_start">#DFE4EF</color>
-    <color name="gradient_blue_end">#899CFC</color>
+    <color name="gradient_blue_start">#FFFFFF</color>
+    <color name="gradient_blue_end">#9FC8C0</color>
     <color name="gradient_pink_start">#FFDBD5</color>
     <color name="gradient_pink_end">#FE69BD</color>
 

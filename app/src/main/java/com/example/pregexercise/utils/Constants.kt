@@ -36,9 +36,9 @@ object Constants {
                     /**
                      * Save workout to  WorkoutModel
                      */
-                     //imageResource = context.resources.getIdentifier(item.imageName, "drawable", context.packageName)
+                     imageResource = context.resources.getIdentifier(item.imageName, "drawable", context.packageName)
 
-                     imageResource = context.resources.getIdentifier("set01","drawable", context.packageName)
+                     //imageResource = context.resources.getIdentifier("set01","drawable", context.packageName)
 
                      workoutItem = WorkoutModel(
                         item.id,
@@ -55,8 +55,8 @@ object Constants {
                 /**
                  * Save Chapter to  WorkoutSetModel
                  */
-                //imageResource = context.resources.getIdentifier(rowItem.setImageName, "drawable", context.packageName)
-                imageResource = context.resources.getIdentifier("set01","drawable", context.packageName)
+                imageResource = context.resources.getIdentifier(rowItem.setImageName, "drawable", context.packageName)
+                //imageResource = context.resources.getIdentifier("set01","drawable", context.packageName)
 
                 workoutSetItem = WorkoutSetModel(
                     rowItem.id,

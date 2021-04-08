@@ -59,7 +59,6 @@ class WorkoutActivity : BaseActivity(){
         if (intent.hasExtra(Constants.INTENT_WORKOUT_EXERCISE_ID)) {
             mExerciseId = intent.getStringExtra(Constants.INTENT_WORKOUT_EXERCISE_ID)!!
         }
-        setupActionBar()
 
         // Start and pause timer : optional
         binding.exerciseProgressBar.setOnClickListener {  checkPauseTimer()  }
@@ -75,6 +74,8 @@ class WorkoutActivity : BaseActivity(){
         setupExerciseStatusRecyclerView()
 
         Log.i("Intent >>", "setId: $mSetId exId : $mExerciseId")
+
+        setupActionBar()
 
     }
 
