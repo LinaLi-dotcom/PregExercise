@@ -79,8 +79,6 @@
                     android:textColor="@color/color_text_workout_timer"
                     android:textSize="@dimen/text_size_rest_time"
                     tools:text = "10" />
-
-
             </LinearLayout>
         </FrameLayout>
 
@@ -133,7 +131,7 @@
                     android:scaleType="fitXY"
                     android:layout_weight="1"
                     android:contentDescription="@string/image"
-                    android:src="@drawable/ex001"
+                    android:src="@drawable/set01_ex01"
                     />
             </LinearLayout>
 
@@ -191,10 +189,6 @@
                 </FrameLayout>
             </LinearLayout>
         </LinearLayout>
-
-
-
-
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

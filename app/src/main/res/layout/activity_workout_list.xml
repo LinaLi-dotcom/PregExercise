@@ -93,12 +93,12 @@
 
         <ImageButton
             android:id="@+id/btn_start_exercise"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/icon_start"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:background="@color/colorWhite"
             android:contentDescription="@string/str_start"
-            />
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_start" />
 
     </LinearLayout>
     </RelativeLayout>

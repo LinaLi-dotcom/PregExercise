@@ -2,54 +2,367 @@
   "workoutSet": [
     {
       "id": "S01",
-      "setName": "Set one",
-      "setImageName": "set01",
-      "setDescription":"setDescription - 01",
+      "setName": "Back and Hip",
+      "setImageName": "gradient_blue",
+      "setDescription": "",
       "workouts": [
         {
           "id": "S01E01",
-          "name": "Set-01-Exercise-01",
+          "name": "workout set one exercise one",
           "imageName": "set01_ex01",
-          "workoutTime": 5,
-          "restTime" : 2
+          "workoutTime": 30,
+          "restTime": 10
         },
         {
           "id": "S01E02",
-          "name": "Set-01-Exercise-02",
+          "name": "workout set one exercise two",
           "imageName": "set01_ex02",
-          "workoutTime": 5,
-          "restTime" : 3
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S01E03",
+          "name": "workout set one exercise three",
+          "imageName": "set01_ex03",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S01E04",
+          "name": "workout set one exercise four",
+          "imageName": "set01_ex04",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S01E05",
+          "name": "workout set one exercise five",
+          "imageName": "set01_ex05",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S01E06",
+          "name": "workout set one exercise six",
+          "imageName": "set01_ex06",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S01E07",
+          "name": "workout set one exercise seven",
+          "imageName": "set01_ex07",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S01E08",
+          "name": "workout set one exercise eight",
+          "imageName": "set01_ex08",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S01E09",
+          "name": "workout set one exercise nine",
+          "imageName": "set01_ex09",
+          "workoutTime": 30,
+          "restTime": 10
         }
       ]
     },
     {
       "id": "S02",
-      "setName": "Set two",
-      "setImageName": "set02",
-      "setDescription":"setDescription - 01",
+      "setName": "Yoga",
+      "setImageName": "gradient_blue",
+      "setDescription": "",
       "workouts": [
         {
           "id": "S02E01",
-          "name": "Set-02-Exercise-01",
-          "imageName": "set02_ex01",
-          "workoutTime": 5,
-          "restTime" : 5
+          "name": "Yoga exercise one",
+          "imageName": "yoga_01",
+          "workoutTime": 30,
+          "restTime": 10
         },
         {
           "id": "S02E02",
-          "name": "Set-02-Exercise-02",
-          "imageName": "set02_ex02",
-          "workoutTime": 5,
-          "restTime" : 5
+          "name": "Yoga exercise two",
+          "imageName": "yoga_02",
+          "workoutTime": 30,
+          "restTime": 10
         },
         {
           "id": "S02E03",
-          "name": "Set-02-Exercise-03",
-          "imageName": "set02_ex03",
-          "workoutTime": 5,
-          "restTime" : 5
+          "name": "Yoga exercise three",
+          "imageName": "yoga_03",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S02E04",
+          "name": "Yoga exercise four",
+          "imageName": "yoga_04",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S02E05",
+          "name": "Yoga exercise five",
+          "imageName": "yoga_05",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S02E06",
+          "name": "Yoga exercise six",
+          "imageName": "yoga_06",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S02E07",
+          "name": "Yoga exercise seven",
+          "imageName": "yoga_07",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S02E08",
+          "name": "Yoga exercise eight",
+          "imageName": "yoga_08",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S02E09",
+          "name": "Yoga exercise nine",
+          "imageName": "yoga_09",
+          "workoutTime": 30,
+          "restTime": 10
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "setName": "Back and Hip Exercise",
+      "setImageName": "gradient_blue",
+      "setDescription": "",
+      "workouts": [
+        {
+          "id": "S03E01",
+          "name": "Back and hip exercise one",
+          "imageName": "back_hip_01",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S03E02",
+          "name": "Back and hip exercise two",
+          "imageName": "back_hip_02",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S03E03",
+          "name": "Back and hip exercise three",
+          "imageName": "back_hip_03",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S03E04",
+          "name": "Back and hip exercise four",
+          "imageName": "back_hip_04",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S03E05",
+          "name": "Back and hip exercise five",
+          "imageName": "back_hip_05",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S03E06",
+          "name": "Back and hip exercise six",
+          "imageName": "back_hip_06",
+          "workoutTime": 30,
+          "restTime": 10
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "setName": "Workout With Boll ",
+      "setImageName": "gradient_blue",
+      "setDescription": "",
+      "workouts": [
+        {
+          "id": "S04E01",
+          "name": "workout with boll exercise one",
+          "imageName": "workout_with_boll_01",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S04E02",
+          "name": "workout with boll exercise two",
+          "imageName": "workout_with_boll_02",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S04E03",
+          "name": "workout with boll exercise three",
+          "imageName": "workout_with_boll_03",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S04E04",
+          "name": "workout with boll exercise four",
+          "imageName": "workout_with_boll_04",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S04E05",
+          "name": "workout with boll exercise five",
+          "imageName": "workout_with_boll_05",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S04E06",
+          "name": "workout with boll exercise six",
+          "imageName": "workout_with_boll_06",
+          "workoutTime": 30,
+          "restTime": 10
+        }
+      ]
+    },
+    {
+      "id": "S05",
+      "setName": "Workout With Dumbbells",
+      "setImageName": "gradient_blue",
+      "setDescription": "",
+      "workouts": [
+        {
+          "id": "S05E01",
+          "name": "workout with dumbbells exercise one",
+          "imageName": "workout_with_dumbbells_01",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S05E02",
+          "name": "workout with dumbbells exercise two",
+          "imageName": "workout_with_dumbbells_02",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S05E03",
+          "name": "workout with dumbbells exercise three",
+          "imageName": "workout_with_dumbbells_03",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S05E04",
+          "name": "workout with dumbbells exercise four",
+          "imageName": "workout_with_dumbbells_04",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S05E05",
+          "name": "workout with dumbbells exercise five",
+          "imageName": "workout_with_dumbbells_05",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S05E06",
+          "name": "workout with dumbbells exercise six",
+          "imageName": "workout_with_dumbbells_06",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S05E07",
+          "name": "workout with dumbbells exercise seven",
+          "imageName": "workout_with_dumbbells_07",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S05E08",
+          "name": "workout with dumbbells exercise eight",
+          "imageName": "workout_with_dumbbells_08",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S05E09",
+          "name": "workout with dumbbells exercise nine",
+          "imageName": "workout_with_dumbbells_09",
+          "workoutTime": 30,
+          "restTime": 10
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "setName": "Workout With Your Baby",
+      "setImageName": "gradient_blue",
+      "setDescription": "",
+      "workouts": [
+        {
+          "id": "S06E01",
+          "name": "workout with your baby exercise one",
+          "imageName": "workout_with_baby_01",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S06E02",
+          "name": "workout with your baby exercise two",
+          "imageName": "workout_with_baby_02",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S06E03",
+          "name": "workout with your baby exercise three",
+          "imageName": "workout_with_baby_03",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S06E04",
+          "name": "workout with your baby exercise four",
+          "imageName": "workout_with_baby_04",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S06E05",
+          "name": "workout with your baby exercise five",
+          "imageName": "workout_with_baby_05",
+          "workoutTime": 30,
+          "restTime": 10
+        },
+        {
+          "id": "S06E06",
+          "name": "workout with your baby exercise six",
+          "imageName": "workout_with_baby_06",
+          "workoutTime": 30,
+          "restTime": 10
         }
       ]
     }
   ]
 }
+

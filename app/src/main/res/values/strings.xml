@@ -15,8 +15,8 @@
     <string name="please_click_back_again_to_exit">Click again to exit</string>
 
     <!--MAIN ACTIVITY-->
-    <string name="main_title">Exercise</string>
-    <string name="main_description">for pregnancy</string>
+    <string name="main_title">Exercise for pregnancy </string>
+    <string name="main_description">Version 1.0</string>
     <!--WORKOUT SET ACTIVITY-->
     <string name="workout_set_title">Set Name</string>
 

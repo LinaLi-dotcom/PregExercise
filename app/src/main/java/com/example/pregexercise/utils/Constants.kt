@@ -11,7 +11,7 @@ object Constants {
     const val SPEECH_DELAY : Float = 0.7f
     const val INTENT_WORKOUT_SET_ID = "workout_set_id"
     const val INTENT_WORKOUT_SET_NAME = "workout_set_name"
-
+    const val INTENT_WORKOUT_EXERCISE_ID = "workout_exercise_id"
 
 
     fun getWorkoutItems(context: Context) : ArrayList<WorkoutSetModel> {
@@ -37,16 +37,18 @@ object Constants {
                      * Save workout to  WorkoutModel
                      */
                      imageResource = context.resources.getIdentifier(item.imageName, "drawable", context.packageName)
+
+                     //imageResource = context.resources.getIdentifier("set01","drawable", context.packageName)
+
                      workoutItem = WorkoutModel(
                         item.id,
+                         //"test",
                         item.name,
                         imageResource,
                          item.workoutTime,
                          item.restTime,
                          false,
                          false
-
-
                     )
                      workoutItems.add(workoutItem)
                 }
@@ -54,6 +56,8 @@ object Constants {
                  * Save  to  WorkoutSetModel
                  */
                 imageResource = context.resources.getIdentifier(rowItem.setImageName, "drawable", context.packageName)
+                //imageResource = context.resources.getIdentifier("set01","drawable", context.packageName)
+
                 workoutSetItem = WorkoutSetModel(
                     rowItem.id,
                     rowItem.setName,

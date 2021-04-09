@@ -24,7 +24,7 @@ class WorkoutActivity : BaseActivity(){
 
     private var mSetId: String = ""
     private var mSetName: String = ""
-
+    private var mExerciseId: String = ""
 
     private var restTimer: CountDownTimer? = null
     private var restProgress = 0
@@ -55,10 +55,10 @@ class WorkoutActivity : BaseActivity(){
         if (intent.hasExtra(Constants.INTENT_WORKOUT_SET_ID)) {
             mSetId = intent.getStringExtra(Constants.INTENT_WORKOUT_SET_ID)!!
         }
-        if (intent.hasExtra(Constants.INTENT_WORKOUT_SET_NAME)) {
-            mSetName = intent.getStringExtra(Constants.INTENT_WORKOUT_SET_NAME)!!
+
+        if (intent.hasExtra(Constants.INTENT_WORKOUT_EXERCISE_ID)) {
+            mExerciseId = intent.getStringExtra(Constants.INTENT_WORKOUT_EXERCISE_ID)!!
         }
-        setupActionBar()
 
         // Start and pause timer : optional
         binding.exerciseProgressBar.setOnClickListener {  checkPauseTimer()  }
@@ -66,19 +66,39 @@ class WorkoutActivity : BaseActivity(){
 
         // Get exercise List
         mWorkoutListItems = getRowsData()
+        // get Current Exercise
+        currentExercisePosition = getCurrentExercisePosition()
         // Start with rest timer
         setupRestView()
         // set RecyclerView
         setupExerciseStatusRecyclerView()
+
+        Log.i("Intent >>", "setId: $mSetId exId : $mExerciseId")
+
+        setupActionBar()
 
     }
 
     private fun getRowsData() : ArrayList<WorkoutModel>? {
         /*** WORKOUT LIST* */
         Constants.getWorkoutItems(this).filter { it.id == mSetId }.forEach { selectedSet ->
+            mSetId = selectedSet.id
+            mSetName = selectedSet.setName
             mWorkoutListItems = selectedSet.workouts!!
         }
         return  mWorkoutListItems
+    }
+
+    private fun getCurrentExercisePosition(): Int {
+        if (mExerciseId != "") {
+            for ((i, item) in mWorkoutListItems!!.withIndex()) {
+                if (item.id == mExerciseId) {
+                    currentExercisePosition = i - 1
+                    return  currentExercisePosition
+                }
+            }
+        }
+        return currentExercisePosition // -1
     }
 
     override fun onDestroy() {
