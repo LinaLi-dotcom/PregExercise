@@ -72,6 +72,7 @@ open class BaseActivity : AppCompatActivity() , TextToSpeech.OnInitListener{
      */
     private lateinit var mProgressDialog: Dialog
     private lateinit var dialogBinding : DialogProgressBinding
+
     fun showProgressDialog(text: String) {
         mShowingDialog = true
         mProgressDialog = Dialog(this)
@@ -101,6 +102,7 @@ open class BaseActivity : AppCompatActivity() , TextToSpeech.OnInitListener{
      * Function is used to launch the custom confirmation dialog.
      */
     private lateinit var confirmBinding : DialogCustomBackConfirmationBinding
+
     fun customDialogForBackButton() {
         val customDialog = Dialog(this)
         /*Set the screen content from a layout resource.

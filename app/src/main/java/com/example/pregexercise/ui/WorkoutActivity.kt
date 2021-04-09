@@ -73,7 +73,7 @@ class WorkoutActivity : BaseActivity(){
         // set RecyclerView
         setupExerciseStatusRecyclerView()
 
-        Log.i("Intent >>", "setId: $mSetId exId : $mExerciseId")
+        Log.i("Intent", "setId: $mSetId exId : $mExerciseId")
 
         setupActionBar()
 
