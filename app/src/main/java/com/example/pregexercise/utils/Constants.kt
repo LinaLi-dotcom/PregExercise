@@ -46,7 +46,7 @@ object Constants {
                      workoutItems.add(workoutItem)
                 }
                 /**
-                 * Save Chapter to  WorkoutSetModel
+                 * Save  to  WorkoutSetModel
                  */
                 imageResource = context.resources.getIdentifier(rowItem.setImageName, "drawable", context.packageName)
 
