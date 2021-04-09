@@ -3,7 +3,7 @@
     {
       "id": "S01",
       "setName": "Back and Hip",
-      "setImageName": "gradient_blue",
+      "setImageName": "set01",
       "setDescription": "",
       "workouts": [
         {
@@ -74,8 +74,8 @@
     {
       "id": "S02",
       "setName": "Yoga",
-      "setImageName": "gradient_blue",
-      "setDescription": "",
+      "setImageName": "yoga",
+      "setDescription": "yoga",
       "workouts": [
         {
           "id": "S02E01",
@@ -145,7 +145,7 @@
     {
       "id": "S03",
       "setName": "Back and Hip Exercise",
-      "setImageName": "gradient_blue",
+      "setImageName": "back_hip",
       "setDescription": "",
       "workouts": [
         {
@@ -195,7 +195,7 @@
     {
       "id": "S04",
       "setName": "Workout With Boll ",
-      "setImageName": "gradient_blue",
+      "setImageName": "workout_with_boll",
       "setDescription": "",
       "workouts": [
         {
@@ -245,7 +245,7 @@
     {
       "id": "S05",
       "setName": "Workout With Dumbbells",
-      "setImageName": "gradient_blue",
+      "setImageName": "workout_with_dumbbells",
       "setDescription": "",
       "workouts": [
         {
@@ -316,7 +316,7 @@
     {
       "id": "S06",
       "setName": "Workout With Your Baby",
-      "setImageName": "gradient_blue",
+      "setImageName": "workout_with_baby",
       "setDescription": "",
       "workouts": [
         {
