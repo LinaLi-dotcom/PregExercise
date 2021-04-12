@@ -91,13 +91,12 @@
         android:layout_alignParentBottom="true"
         >
 
-        <ImageButton
+        <ImageView
             android:id="@+id/btn_start_exercise"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:contentDescription="@string/str_start"
             android:scaleType="fitXY"
-            android:background="@color/white"
             android:src="@drawable/ic_start" />
 
     </LinearLayout>
