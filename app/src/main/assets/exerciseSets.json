@@ -74,8 +74,8 @@
     {
       "id": "S02",
       "setName": "Yoga",
-      "setImageName": "yoga",
-      "setDescription": "yoga",
+      "setImageName": "yoga_01",
+      "setDescription": "",
       "workouts": [
         {
           "id": "S02E01",
@@ -245,7 +245,7 @@
     {
       "id": "S05",
       "setName": "Workout With Dumbbells",
-      "setImageName": "workout_with_dumbbells",
+      "setImageName": "workout_with_dumbbells_09",
       "setDescription": "",
       "workouts": [
         {
@@ -316,7 +316,7 @@
     {
       "id": "S06",
       "setName": "Workout With Your Baby",
-      "setImageName": "workout_with_baby",
+      "setImageName": "workout_with_baby_06",
       "setDescription": "",
       "workouts": [
         {

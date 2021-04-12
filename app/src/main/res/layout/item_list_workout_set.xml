@@ -4,49 +4,55 @@
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
     android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/ll_workout_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/background_setimage"
+        >
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="175dp"
+        <ImageView
+            android:id="@+id/iv_workout_set"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/set01" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:gravity="right"
             android:orientation="vertical"
-            android:gravity="center"
-            android:background="@color/workout_set_background">
-            <ImageView
-                android:id="@+id/iv_workout_set"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/set01"/>
-
-            <LinearLayout
-                android:id="@+id/ll_workout_set"
-                android:layout_width="match_parent"
+            >
+            <com.example.utils.MSPTextViewBold
+                android:id="@+id/tv_workout_set_title"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginRight="0dp"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:paddingBottom="5dp">
-                <!--WORKOUT SET TITLE-->
-                <com.example.utils.MSPTextViewBold
-                    android:id="@+id/tv_workout_set_title"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="bottom|right"
-                    android:padding="5dp"
-                    android:shadowColor="#02000000"
-                    android:text="@string/workout_set_title"
-                    android:textColor="@color/color_text_big"
-                    android:textSize="@dimen/text_size_large" />
-                <!--WORKOUT SET DESCRIPTION-->
-                <com.example.utils.MSPTextViewBold
-                    android:id="@+id/tv_workout_set_description"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="bottom|right"
-                    android:padding="5dp"
-                    android:text="Exercise Name"
-                    android:textColor="@color/color_text_large"
-                    android:textSize="@dimen/text_size_normal" />
-            </LinearLayout>
-        </RelativeLayout>
+                android:gravity="bottom|right"
+                android:padding="5dp"
+                android:shadowColor="#02000000"
+                android:text="@string/workout_set_title"
+                android:textColor="@color/color_text_big"
+                android:textSize="20sp" />
+
+            <com.example.utils.MSPTextViewBold
+                android:id="@+id/tv_workout_set_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|right"
+                android:padding="5dp"
+                android:text="Exercise Name"
+                android:textColor="@color/color_text_large"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
 </LinearLayout>
