@@ -97,7 +97,8 @@
             android:layout_height="80dp"
             android:contentDescription="@string/str_start"
             android:scaleType="fitXY"
-            android:src="@drawable/icon_start" />
+            android:background="@color/white"
+            android:src="@drawable/ic_start" />
 
     </LinearLayout>
     </RelativeLayout>
