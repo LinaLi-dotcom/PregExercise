@@ -40,7 +40,7 @@
     <string name="empty_data">EMPTY DATA</string>
     <string name="place_holder_exercise_name">Exercise Name</string>
     <string name="place_holder_exercise_time">Time</string>
-
+    <string name="exercise_list">Exercise one</string>
 
 
 </resources>
