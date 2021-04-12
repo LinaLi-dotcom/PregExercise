@@ -65,7 +65,7 @@ class WorkoutListActivity : BaseActivity() {
             }
             binding.rvDataItems.visibility = View.VISIBLE
             binding.tvNoItemsFound.visibility = View.GONE
-
+/*
             val orientation = resources.configuration.orientation
             if (orientation == Configuration.ORIENTATION_LANDSCAPE) {
                 // In landscape
@@ -74,7 +74,8 @@ class WorkoutListActivity : BaseActivity() {
                 // In portrait
                 binding.rvDataItems.layoutManager = LinearLayoutManager(this)
             }
-
+*/
+            binding.rvDataItems.layoutManager = GridLayoutManager(this, 2)
             binding.rvDataItems.setHasFixedSize(true)
             val itemAdapter = WorkoutAdapter(this@WorkoutListActivity, mSetId, mWorkoutListItems)
             // adapter instance is set to the recyclerview to inflate the items.

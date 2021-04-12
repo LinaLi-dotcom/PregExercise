@@ -38,11 +38,11 @@ class WorkoutAdapter(val context: Context,
     ) : RecyclerView.ViewHolder(itemBinding.root) {
 
         fun bind(rowData: WorkoutModel) {
-            itemBinding.tvWorkoutListTitle.text = rowData.name
-            itemBinding.tvTimer.text = rowData.workoutTime.toString() + " seconds"
+            //itemBinding.tvWorkoutListTitle.text = rowData.name
+            //itemBinding.tvTimer.text = rowData.workoutTime.toString() + " seconds"
             GlobalFunctions(context).loadPictureFromDrawableId(rowData.imageName, itemBinding.ivWorkoutList)
 
-            itemBinding.llRow.setOnClickListener {
+            itemBinding.ivWorkoutList.setOnClickListener {
                 // Intent to the other Activity
                 val intent = Intent(context, WorkoutActivity::class.java)
                 intent.putExtra(Constants.INTENT_WORKOUT_SET_ID, mSetId)
